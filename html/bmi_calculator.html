@@ -1,0 +1,67 @@
+        <div id='innerWrapper' ng-app="" ng-controller="Controller">
+            <div id='mainFormula'>
+                <img class='closeContent' id='closeFormula' src="images/close.png" alt="bmi formula close">
+                 <h1 id='formulaTitle'>BMI Formula</h1>
+                <p id='formula'>$$BMI = (W/H^2)* 703$$</p>
+                <hr>
+                <div id='formulaExplained'>
+                    <p>$$W$$ = Weight in <span class='imperialUnitsLabel'>pounds(lbs)</span><span class='metricUnitsLabel'>kilograms(kg)</span></p>
+                    <p>$$H$$ = Height in <span class='imperialUnitsLabel'>inches(in)</span><span class='metricUnitsLabel'>meters(m)</span></p>
+                </div>
+                <hr>
+                <div id="formulaOptions">
+                    <h2>BMI formula filled with...</h2>
+                    <div class="formulaOptions"><label for='variablesInput'>Variables</label><input id='variablesInput' type="radio" ng-model="calc.formulaOption" value="variables"></div>
+                    <div class="formulaOptions" id="scenarioPlug"><label for='scenarioPlugInput'>My Numbers</label><input id='scenarioPlugInput' type="radio"  ng-model="calc.formulaOption" value="scenario"></div>
+                </div>
+            </div>
+            <div id="mainContent1">
+                <h1 id="mainContent1Title">BMI Calculator</h1>
+                <div id='inputWrapper'>
+                    <div id='bmiInput'>
+                    <label for='height'>Height: </label><input id='height' type="text" autocomplete="off" ng-model="calc.height"><span class='imperialUnitsLabel'>ft</span><span class='metricUnitsLabel'>meters</span>
+                        <input id='height2' type="text" autocomplete="off" ng-model="calc.height2"><span class='imperialUnitsLabel'>in</span><span class='metricUnitsLabel'>cm</span><br>
+                    <label for='weight'>Weight: </label><input id='weight' type="text" autocomplete="off" ng-model="calc.weight"><span class='imperialUnitsLabel'>lbs</span><span class='metricUnitsLabel'>kg</span>
+                    </div>
+                    <div id='bmiUnits'>
+                        <h3>Units</h3>
+                        <label for='imperialUnits'>Imperial</label><input id='imperialUnits' type="radio" ng-model="calc.unitsLabel" value="imperialUnits"><br>
+                        <label for='metricUnits'>Metric</label><input id='metricUnits' type="radio" ng-model="calc.unitsLabel" value="metricUnits"><br>
+                    </div>
+                </div>
+                <h1 id="bmiValue">BMI: {{calc.bmiValue()|number:1}}</h1>
+                <h2 id="bmiStatus">You are {{calc.bmiStatus()}}.</h2>
+                <hr>
+                <div id='moreInfoButtonWrap'>
+                    <button id="formulaButton">View Formula</button><button id="moreInfoButton">More Info</button>
+                </div>
+            </div>
+            <div id="mainContent2WTitle">
+                <h1 id="mainContent2WTitleTitle">BMI Classification</h1>
+                <div class='bmiClassInnerWrap'>
+                    <p>18.5 or Less</p>
+                    <p>18.5 to 24.99</p>
+                    <p>25 to 29.99</p>
+                    <p>30 to 34.99</p>
+                    <p>35 to 39.99</p>
+                    <p>40 or Greater</p>
+                </div>
+                <div class='bmiClassInnerWrap'>
+                    <p>Underweight</p>
+                    <p>Normal Weight</p>
+                    <p>Overweight</p>
+                    <p>Obesity (class 1)</p>
+                    <p>Obesity (class 2)</p>
+                    <p>Morbid Obesity</p>
+                </div>
+            </div>
+            <img id="bmiChart" src="images/bmi_chart.jpg" alt="bmi calculator chart">
+        </div>
+            
+        <div id="moreInfoWrapper">
+                <div id='moreInfoContent'>
+                    <h1 id="moreInfoTitle">More Information On BMI</h1>
+                    <p>More information coming soon once more pages are added. Thanks for your patience.</p>
+                </div>
+                <img id='backArrow' src="images/sideArrowWhiteNew2.png" alt='bmi calculator back'>
+        </div>

@@ -1,0 +1,494 @@
+        @font-face {
+            font-family: ChunkFive;
+            src: url('ChunkFive/Chunkfive.otf') format("opentype");
+        }
+
+        @font-face {
+            font-family: Aleo;
+            src: url('aleo/Aleo-Regular.otf') format("opentype");
+        }
+
+        @keyframes pulsate {
+             0%   {transform: scale(1);}
+             100% {transform: scale(1.1);}
+        }
+
+        @-webkit-keyframes pulsate {
+            0%   {transform: scale(1);}
+            100% {transform: scale(1.1);}
+        }
+        
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        
+        html 
+        { 
+            -ms-overflow-style: none; 
+        }
+
+        
+        body,html
+        {
+            margin:0px;
+            height: 100%;
+            width:100%;
+            overflow-x:hidden;
+            font-family:Aleo;
+        }
+        
+        #navBar
+        {
+            height:80px;
+            background: rgba(0,128,0,.8);
+            background: -webkit-linear-gradient(rgba(0,75,0,1), rgba(0,128,0,.8)); 
+            background: -o-linear-gradient(rgba(0,75,0,1), rgba(0,128,0,.8)); 
+            background: -moz-linear-gradient(rgba(0,75,0,1), rgba(0,128,0,.8));
+            background: linear-gradient(rgba(0,75,0,1), rgba(0,128,0,.8));
+            color:white;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+        }
+        #sideNav
+        {
+            background-color:rgba(0,0,0,.92);
+            position:absolute;
+            top:0px;
+            right:0px;
+            width:300px;
+            height:100%;
+            max-height:100%;
+            z-index: -1;
+            padding: 0px;
+            font-size:25px;
+            overflow-y:auto;
+        }
+
+        #sideNav li a
+        {
+            font-size:22px;
+            text-decoration: none;
+            padding:5px;
+            display:block;
+
+        }
+
+        #sideNav li a:hover
+        {
+            color:white;
+        }
+
+        #sideNav ul
+        {
+            margin:0px;
+        }
+
+        #sideNav li
+        {
+            list-style-type: none;
+        }
+        
+        #navItems
+        {
+            margin-bottom: 75px;
+        }
+
+        #wrapper
+        {
+            width:100%;
+            height: 100%;
+            margin-left:0px;
+            transition: margin-left 400ms ease;
+            background: white;
+            background: white url('../images/Flooded-Forest-1800x2880.jpg');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow-x:hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        #innerWrapper
+        {
+            text-align: center;
+            padding-bottom: 75px;
+            display: none;
+        }
+        
+        .openNav
+        {
+            margin-left: -300px !important;
+        }
+        #title
+        {
+            margin:0px;
+            font-family: ChunkFive;
+            font-size:50px;
+            margin-bottom: -10px;
+            font-weight: normal;
+        }
+        .activeZ
+        {
+            z-index:1 !important;
+        }
+        
+        #menuIcon
+        {
+            position: absolute;
+            right:10px;
+            height:80px;
+            cursor: pointer;
+            opacity: .5;
+        }
+        #menuIcon:hover
+        {
+            opacity:.9;
+        }
+        
+        #titleDiv
+        {
+            display: inline-block;
+            cursor: pointer;
+            opacity: .9; 
+            height:100%;
+            padding-left:5px;
+            padding-right:5px;
+            position: relative;
+        }
+        
+        #logo
+        {
+          position: absolute;
+          height: 78px;
+          bottom: 0px;
+          left: -80px;
+        }
+        
+        #slogan
+        {
+            margin:0px;
+            margin-top:-5px;
+            font-size:20px;
+        }
+        
+        #titleText
+        {
+            display: inline-block;
+            float:left;
+        }
+        #closeSideNav
+        {
+            position:absolute;
+            height: 50px;
+            cursor: pointer;
+            opacity:.5;
+            top:10px;
+            right:10px;
+            display: none;
+        }
+
+        #closeSideNav:hover
+        {
+            opacity: 1;
+        }
+        #sideIcon
+        {
+            opacity:.9;
+            height:150px;
+            margin:10px auto;
+            display:block;
+            cursor: pointer;
+        }
+
+        #sideIcon:hover
+        {
+            opacity: 1;
+        }
+        
+        input[type=number],input[type=text],input[type=email],select
+        {
+            padding: .5em .6em;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px black;
+            border-radius: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size:100%;
+            font-family: 'Aleo';
+        }
+        
+         input[type=number]:focus,input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus
+        {
+            outline: 0;
+            border-color: green;
+        }
+        
+        button
+        {
+            font-family: 'Aleo';
+            font-size: 22px;
+            padding: .5em 1em;
+            border: 0 rgba(0,0,0,0);
+            background-color: green;
+            text-decoration: none;
+            border-radius: 2px;
+            color:white;
+            cursor: pointer;
+            opacity: .7;
+            
+        }
+        
+        button:hover
+        {
+            opacity:1;
+        }
+
+        .pageHighlight
+        {
+            color:rgb(255,255,255) !important;
+        }
+        
+        #navBarLink
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        .ui-state-active a.singleLink,.ui-state-focus a.singleLink,.ui-state-hover a.singleLink
+        {
+            color:white;
+        }
+
+        #moreInfoWrapper
+        {
+            text-align: center;
+            display: none;
+            padding: 0px 130px;
+            padding-bottom: 75px;
+        }
+
+         #backArrow
+        {
+            position: fixed;
+            right: -5px;
+            height: 130px;
+            margin-top: -80px;
+            top: 50%; 
+            cursor: pointer;
+            transition: right .5s;
+            opacity:.8;
+            display:none;
+        }
+        
+        #backArrow:hover
+        {
+             right: -20px;
+             opacity:1;
+        }
+
+        #backArrow.openContent
+        {
+            right:295px;
+        }
+
+        #backArrow.openContent:hover
+        {
+            right:280px;
+        }
+
+        #mainContent1,#mainContent2,#mainContent2WTitle,#mainFormula,#moreInfoContent
+        {
+            background-color:rgba(255,255,255,.8);
+            width:510px;
+            padding:25px;
+            margin:50px;
+            margin-bottom: 0px;
+            box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3);
+            display:inline-block;
+            text-align: left;
+            font-size: 20px;
+            position:relative;
+            vertical-align: top;
+            border-radius:10px;
+        }
+
+        #moreInfoContent
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            margin-top:50px;
+            width:100%;
+        }
+
+        #mainContent1,#mainContent2WTitle,#mainFormula,#moreInfoContent
+        {
+            padding-top:15px;
+        }
+        
+        #mainFormula
+        {
+            display: none;
+        }
+
+        #mainContent1 input,#mainContent2 input
+        {
+            margin-bottom: 10px;
+        }
+
+        #mainContent1Title,#mainContent2WTitleTitle,#formulaTitle,#moreInfoTitle
+        {
+            text-align: center;
+            margin: 0px;
+            font-size: 27px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+
+         .closeContent
+        {
+            position: absolute;
+            right:15px;
+            top:10px;
+            height:50px;
+            opacity: .5;
+            cursor: pointer;
+        }
+        
+        .closeContent:hover
+        {
+            opacity:1;
+        }
+
+        .pulsate
+        {
+            animation: pulsate 1s infinite alternate linear;
+            -webkit-animation: pulsate 1s infinite alternate linear;
+        }
+
+        #mainFormula h1
+        {
+            text-align: center;
+            margin: 0px;
+            font-size: 27px;
+        }
+
+        
+        #formulaExplained .ma-block
+        {
+            display: inline-block;
+        }
+
+        #mainFormula p
+        {
+            margin:10px;
+            font-size:18px;
+        }
+
+        #mainFormula #formula
+        {
+            width:100%;
+            margin:10px 0px;
+            overflow: hidden;
+        }
+        
+        #mainFormula
+        {
+            width:auto;
+            max-width: 80%;
+            overflow: hidden;
+            
+        }
+
+        #mainFormula .ma-block
+        {
+            font-size: 20px;
+        }
+        
+        #mainFormula hr
+        {
+            margin: 5px 0px;
+        }
+
+        #formulaOptions
+        {
+            text-align: center;
+            margin-bottom:15px;
+        }
+
+        #formulaOptions input, #formulaOptions label
+        {
+            cursor: pointer;
+        }
+
+        #formulaOptions h2
+        {
+            font-size:25px;
+            margin: 0px 0px 10px 0px;
+        }
+        
+        .formulaOptions
+        {
+            display: inline-block;
+            margin: 0px 15px;
+        }
+
+        #moreInfoContent
+        {
+            text-align: center;
+        }
+
+        div.fb-like
+        {
+            text-align: left;
+            top: 30px;
+            left: 15px;
+            position: absolute;
+        }
+
+        #loadingGif
+        {
+            position: absolute;
+            top: 10px;
+            right: 100px;
+            width: 60px;
+            height: 60px;
+            display: none;
+        }
+        
+        #smile
+        {
+            position: absolute;
+            top: 3px;
+            right: 92px;
+            width: 75px;
+            display:none;
+        }
+
+        .singleLink
+        {
+            display: block;
+            margin: 2px 0 0 0;
+            padding: .5em .5em .5em .7em;
+            padding-left:55px;
+        }
+
+        .ui-accordion .noDropContent
+        {
+            padding:0px;
+            margin:0px;
+        }
+
+        .ui-accordion .ui-accordion-header .ui-accordion-header-icon
+        {
+            z-index: -1;
+        }
+
+
+        

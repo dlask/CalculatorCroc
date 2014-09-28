@@ -1,0 +1,86 @@
+ <div id='innerWrapper' ng-app="" ng-controller="Controller">
+                <div id='mainFormula'>
+                    <img class='closeContent' id='closeFormula' src="images/close.png" alt="compound interest formula close">
+                    <h1>Llama Power Formula</h1>
+                    <p id='formula'>$$P = (n * ((k*s)/f))^2/((y/100)*a) $$</p>
+                    <hr>
+                    <div id='formulaExplained'>
+                        <p>$$P$$ = Llama power!</p>
+                        <p>$$n$$ = Number of llamas</p>
+                        <p>$$y$$ = Average age in years</p>
+                        <p>$$f$$ = Average fur length in inches</p>
+                        <p>$$k$$ = Average neck length in inches</p>
+                        <p>$$s$$ = Average spit velocity in miles per hour</p>
+                        <p>$$a$$ = Average attitude level </p>
+                    </div>
+                    <hr>
+                    <div id="formulaOptions">
+                        <h2>Llama power formula filled with...</h2>
+                        <div class="formulaOptions"><label for='variablesInput'>Variables</label><input id='variablesInput' type="radio" ng-model="calc.formulaOption" value="variables"></div>
+                        <div class="formulaOptions" id="scenarioPlug"><label for='scenarioPlugInput'>My Numbers</label><input id='scenarioPlugInput' type="radio"  ng-model="calc.formulaOption" value="scenario"></div>
+                    </div>
+                </div>
+                <div id='mainContent1'>
+                        <div id='llamaTitleDiv'>
+                            <img src="images/llama.png" alt="llama" class='titleStuff'>
+                            <h1 id='llamaTitle' class='titleStuff'>Llama power calculator</h1>
+                            <img src="images/llama2.png" alt="llama" class='titleStuff'>
+                        </div>
+                        <label for='number'>Number of llamas: </label><input id='number' type="text" autocomplete="off" ng-model="calc.number"><br>
+                        <label for='age'>Average age: </label><input id='age' type="text" autocomplete="off" ng-model="calc.age"><span> years old</span><br>
+                        <label for='fur'>Average fur length: </label><input id='fur' type="text" autocomplete="off" ng-model="calc.fur"><span> inches long</span><br>
+                        <label for='neck'>Average neck length: </label><input id='neck' type="text" autocomplete="off" ng-model="calc.neck"><span> inches long</span><br>
+                        <label for='spit'>Average spit velocity: </label><input id='spit' type="text" autocomplete="off" ng-model="calc.spit"><span> mph</span><br>
+                        <label for='attitude'>Average attitude level: </label><select id='attitude' type="text" autocomplete="off" ng-model="calc.attitude">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select><span> (10 being a drama llama)</span><br>
+                       
+                    <br>
+                    <h1 id='result'>Llama Power:<br> {{calc.llamaPower()| number:0}} <span class='resultLabel'> tons of TNT!</span></h1>
+                    <div id='buttonDiv'>
+                        <button id="formulaButton">View Formula</button>
+                    </div>
+                </div>
+                 <div id='mainContent2'>
+                     <h2>Your llama power output equals that of...</h2>
+                     <h1>{{calc.llamaAtomicPower()| number:2}}<span class='resultLabel'><a href ='http://en.wikipedia.org/wiki/Tsar_Bomba' target="_blank"> Tsar Bomba</a> hydrogen bombs!</span></h1>
+                     <img id ='llamaIcon' src='images/llamaIcon.png' alt='llamaIcon'>
+                     <img id='atomicBomb' alt='atomic bomb' src="images/atomicBomb.gif">
+                     <div id='buttonDiv'>
+                        <button id="moreInfoButton">What is Llama Power!?!?</button>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div id="moreInfoWrapper">
+                    <div id='moreInfoContent'>
+                        <h1 id="moreInfoTitle">More Information On Llama Power</h1>
+                        <div class='llamaInfo'>
+                            <img src='../images/comoTeLlama.jpg' alt='llama'>
+                            <p>Only the best companies run on Llama power. Though llama power is correlated to certain physical attributes the true origin of a llama's power remains a mystery. Llama power can only be harnessed by the most innovative companies and they frequently use it to spawn new ideas.</p>
+                        </div>
+                        <div class='llamaInfo'>
+                            <img src='../images/happyLlama.jpg' alt='llama'>
+                            <p>Llamas draw their mystical powers from their fur, neck length, spit velocity, and many other unknown sources.</p>
+                        </div>  
+                        <div class='llamaInfo'>
+                            <img src='../images/coolHairLlama.jpg' alt='llama'>
+                            <p>Llamas are thought to be the most powerful creatures in the universe, their maximum power remains unknown.</p>
+                        </div>
+                        <div class='llamaInfo'>
+                            <img src='../images/shavedLlama.jpg' alt='llama'>
+                            <p>Most importantly, never mess with a Llama!</p>
+                        </div>
+                    </div>
+                    <img id='backArrow' src="images/sideArrowWhiteNew2.png" alt="compound interest calculator back">
+            </div>

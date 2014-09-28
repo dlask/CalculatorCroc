@@ -1,0 +1,119 @@
+#height,#height2
+{
+    width:60px;
+}
+
+#weight
+{
+    width:85px;
+}
+
+#bmiContent input
+{
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+
+#bmiValue
+{
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+    font-size: 35px;
+}
+
+#bmiStatus
+{
+    text-align: center;
+    color:#0078e7;
+    margin: 5px 0px;
+}
+
+#bmiChart
+{
+    display: inline-block;
+    margin: 50px 5px 0px 5px;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3);
+    height: 556px;
+    padding:10px;
+    border-radius: 10px;
+    opacity:.9;
+    max-width: 95%;
+}
+
+#mainContent2WTitle
+{
+    text-align: center;
+    height:346px;
+}
+
+.bmiClassInnerWrap
+{
+    display: inline-block;
+    text-align: left;
+    margin:0px 25px;
+}
+
+#moreInfoButtonWrap
+{
+    margin-top:20px;
+    text-align: center;
+}
+
+#moreInfoButtonWrap button
+{
+     margin: 0px 30px;
+}
+
+#height2
+{
+    margin-left:10px;
+}
+
+#mainContent1 input[type='text']
+{
+    text-align: center;
+}
+
+#mainFormula
+{
+    min-width:475px;
+}
+
+#inputWrapper
+{
+    text-align: center;
+}
+
+#bmiInput
+{
+    display: inline-block;
+    text-align: left;
+}
+
+#bmiUnits
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:50px;
+    padding:10px 25px;
+    background-color: rgba(255,255,255,.7);
+    border-radius:10px;
+}
+
+#bmiUnits h3
+{
+    margin: 0px 0px 5px 0px;
+    
+}
+
+#bmiUnits input, #bmiUnits label
+{
+    cursor:pointer;  
+}
+
+.metricUnitsLabel
+{
+    display: none;
+}
+

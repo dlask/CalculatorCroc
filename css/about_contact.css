@@ -1,0 +1,104 @@
+#ajaxWrapper p
+{
+    text-indent: 50px;
+    font-size:22px;
+    margin: 5px 0px;
+}
+
+#mainContent1,#mainContent2WTitle
+{
+    width:600px;
+    transition: all 1s;
+}
+
+#mainContent1:hover,#mainContent2WTitle:hover
+{
+    transform: scale(1.1);
+    z-index: 2;
+    background-color: rgba(255,255,255,.9);
+}
+
+.techLogos
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 175px;
+    margin:10px 10px;
+}
+
+#lastTechLogo
+{
+    margin-left:50px;
+}
+
+#techLogoDiv
+{
+    text-align: center;
+}
+
+#wrapContentAndEmail
+{
+    display: inline-block;
+    width:750px;
+}
+
+#wrapContentAndEmail.verticalAlignment, #mainContent2WTitle.verticalAlignment
+{
+    vertical-align: middle;
+}
+
+#centerButtAndMessage
+{
+    text-align: center;
+}
+
+#emailMessage
+{
+    width:578px;
+    max-width: 578px;
+    height:100px;
+    max-height: 100px;
+    margin:10px 0px;
+    border-radius: 10px;
+    font-size:15px;
+    padding:10px;
+}
+
+#emailAddress
+{
+    margin-left: 10px;
+    width:400px;
+}
+
+#emailName
+{
+    margin-left: 58px;
+    width:300px;
+}
+
+#emailSubject
+{
+    width:456px;
+}
+
+#mainContent1Title, #mainContent2WTitleTitle
+{
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size:35px;
+}
+
+#emailLink
+{
+    display: block;
+    text-align: center;
+    padding:5px 0px;
+    color:black;
+}
+
+#ajaxWrapper #status
+{
+    margin:0px;
+    margin-bottom: 10px;
+    text-indent: 0px;
+}

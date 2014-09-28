@@ -1,0 +1,99 @@
+#llamaTitleDiv
+{
+    text-align: center;
+}
+
+.titleStuff
+{
+    vertical-align: middle;
+}
+
+#llamaTitle
+{
+    font-size:28px;
+    display:inline-block;
+    text-decoration: underline;
+}
+
+#result
+{
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+#buttonDiv
+{
+     text-align: center;
+}
+
+#buttonDiv button
+{
+    margin:0px 25px;
+}
+
+#buttonDiv #formulaButton
+{
+    background-color: #0078e7;
+}
+
+#buttonDiv #moreInfoButton
+{
+    margin-top:25px;
+}
+
+#mainContent1 input,#mainContent1 select
+{
+    width:75px;
+    text-align: center;
+}
+
+#mainContent1 label
+{
+    font-weight:bold;
+}
+
+.resultLabel
+{
+    font-size: 25px;
+}
+
+#mainContent2
+{
+    width:600px;
+    text-align: center;
+}
+
+#atomicBomb
+{
+    border-radius: 10px;
+    width:300px;
+}
+
+#llamaIcon
+{
+    width:250px;
+}
+
+.llamaInfo
+{
+    width:45%;
+    padding:25px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.llamaInfo img
+{
+    max-width:100%;
+}
+
+
+@media (max-width: 1382px)
+{
+    .llamaInfo
+    {
+        width:100%;
+    }
+}

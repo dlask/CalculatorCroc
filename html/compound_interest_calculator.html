@@ -1,0 +1,72 @@
+            <div id='innerWrapper' ng-app="" ng-controller="Controller">
+                <div id='mainFormula'>
+                    <img class='closeContent' id='closeFormula' src="images/close.png" alt="compound interest formula close">
+                    <h1>Compound Interest Formula</h1>
+                    <p id='formula'>$$F = S(1 + r/n)^(nt) + (A/n)( ( (1 + r/n)^(nt+1) – (1 + r/n)) / (r/n) )$$</p>
+                    <hr>
+                    <div id='formulaExplained'>
+                        <p>$$F$$ = Future value of investment</p>
+                        <p>$$S$$ = Starting amount</p>
+                        <p>$$r$$ = Yearly interest rate</p>
+                        <p>$$n$$ = Number of compounding periods in a year</p>
+                        <p>$$t$$ = Length of investment time in years</p>
+                        <p>$$A$$ = Additional amount added at the beginning of each year</p>
+                    </div>
+                    <hr>
+                    <div id="formulaOptions">
+                        <h2>Compound interest formula filled with...</h2>
+                        <div class="formulaOptions"><label for='variablesInput'>Variables</label><input id='variablesInput' type="radio" ng-model="calc.formulaOption" value="variables"></div>
+                        <div class="formulaOptions" id="scenarioPlug"><label for='scenarioPlugInput'>Scenario #s</label><input id='scenarioPlugInput' type="radio"  ng-model="calc.formulaOption" value="scenario"></div>
+                        <div class="formulaOptions" id="scenario1Plug"><label for='scenario1PlugInput'>Scenario 1 #s</label><input id='scenario1PlugInput' type="radio" ng-model="calc.formulaOption" value="scenario1"></div>
+                        <div class="formulaOptions" id="scenario2Plug"><label for='scenario2PlugInput'>Scenario 2 #s</label><input id='scenario2PlugInput' type="radio" ng-model="calc.formulaOption" value="scenario2"></div>
+                    </div>
+                    <hr>
+                    <div id="moreInfoDiv">
+                        <button id='moreInfoButton'>More Info</button>  
+                    </div>
+                </div>
+                <div id='mainContent1'>
+                        <h1 id="mainContent1Title">Compound Interest Calculator</h1>
+                        <p id='scenario1Label'>Scenario 1</p>
+                        <label for='principal'>Starting Amount: </label><span class="moneySignCurrent">$</span><input id='principal' type="text" autocomplete="off" ng-model="calc.principal"><br>
+                        <label for='addition'>Annual Addition: </label><span class="moneySignAddition">$</span><input id='addition' type="text" autocomplete="off" ng-model="calc.addition"><br>
+                        <label for='years'>Years to Grow: </label><input id='years' type="text" autocomplete="off" ng-model="calc.years"><br>
+                        <label for='interestRate'>Interest Rate: </label><input id='interestRate' type="text" autocomplete="off" ng-model="calc.interestRate"><span class='spanSpace'>%</span><br>
+                        <label for='times'>Compound interest </label><input id='times' type="text" autocomplete="off" ng-model="calc.times"><span class='spanSpace'>time(s) per year.</span>
+                    <br>
+                    <h1 class='futureValue'>Future Value: <span>$</span>{{calc.futureValue()| number:2}}</h1>
+                    <div id='buttonDiv'>
+                        <button id='compareButton'>Compare to Another Scenario</button>
+                        <button id='formulaButton'>View Formula</button>
+                    </div>
+                </div>
+                 <div id='mainContent2'>
+                        <p id='scenario2Label'>Scenario 2</p>
+                        <img class='closeContent' id='closeContent2' src="images/close.png" alt="compound interest calculator close">
+                        <label for='principal2'>Starting Amount: </label><span class="moneySignCurrent">$</span><input id='principal2' type="text" autocomplete="off" ng-model="calc.principal2"><br>
+                        <label for='addition2'>Annual Addition: </label><span class="moneySignAddition">$</span><input id='addition2' type="text" autocomplete="off" ng-model="calc.addition2"><br>
+                        <label for='years2'>Years to Grow: </label><input id='years2' type="text" autocomplete="off" ng-model="calc.years2"><br>
+                        <label for='interestRate2'>Interest Rate: </label><input id='interestRate2' type="text" autocomplete="off" ng-model="calc.interestRate2"><span class='spanSpace'>%</span><br>
+                        <label for='times2'>Compound intrest </label><input id='times2' type="text" autocomplete="off" ng-model="calc.times2"><span class='spanSpace'>time(s) per year.</span>
+                    <br>
+                    <h1 class='futureValue'>Future Value: <span>$</span>{{calc.futureValue2()| number:2}}</h1>
+                </div>
+                <div id='chartWrapper'>
+                    <div id="chart_div" style="width: 900px; height: 500px;">
+                    </div>
+                    <div id="chartOptions">
+                        <h2>Chart Type :</h2>
+                        <label id='firstLabelOptions' for='areaChart'>Area</label><input id='areaChart' type="radio" ng-model="calc.chartOption" value="area">
+                        <label for='barChart'>Column</label><input id='barChart' type="radio" ng-model="calc.chartOption" value="bar">
+                        <label for='lineChart'>Line</label><input id='lineChart' type="radio" ng-model="calc.chartOption" value="line">
+                    </div>
+                    <p id='chartNote'>*Hover over parts of chart for more information</p>
+                </div>
+            </div>
+            <div id="moreInfoWrapper">
+                    <div id='moreInfoContent'>
+                        <h1 id="moreInfoTitle">More Information On Compound Interest</h1>
+                        <p>More information coming soon once more pages are added. Thanks for your patience.</p>
+                    </div>
+                    <img id='backArrow' src="images/sideArrowWhiteNew2.png" alt="compound interest calculator back">
+            </div>

@@ -1,0 +1,165 @@
+        #formulaButton
+        {
+            background-color: #0078e7;
+            margin-top:10px;
+        }
+
+         #moreInfoDiv
+        {
+            text-align: center;
+            margin-top:8px;
+        }
+
+        #moreInfoButton
+        {
+            background-color: #0078e7;
+        }
+        
+        #errorMessageGraph
+        {
+            margin:0px;
+            color:red;
+            font-size:25px;
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        #mainFormula #errorMessageFormula
+        {
+            margin:0px;
+            color:red;
+            font-size:25px;
+            text-align: center;
+        }
+    
+        #buttonDiv
+        {
+            text-align: center;
+        }
+
+        .futureValue
+        {
+            text-align: center;
+            margin:5px 0px 20px 0px;
+            font-size: 35px;
+        }
+        
+        #years,#years2
+        {
+            width:75px;
+            
+        }
+        
+        #interestRate,#interestRate2,#times,#times2
+        {
+            width:60px;
+            text-align: center;
+        }
+        
+        .moneySignAddition
+        {
+            margin-left:20px;
+            margin-right: 3px;
+        }
+        
+        .moneySignCurrent
+        {
+             margin-left:22px;
+            margin-right: 3px;
+        }
+        
+        .spanSpace
+        {
+            margin-left:3px;
+        }
+        
+        #chartWrapper
+        {
+            position: relative;
+            display: inline-block;
+            margin: 50px 5px 0px 5px;
+            background-color:rgba(255,255,255,.9);
+            box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3);
+            height:556px;
+            border-radius:10px;
+        }
+
+        #chartOptions
+        {
+            display: inline-block;
+            margin-top:-15px;
+            background-color:rgba(255,255,255,.8);
+            border-radius: 10px;
+            padding:15px;
+            box-shadow: 3px 3px 3px 3px rgba(0,0,0,.1);
+        }
+        
+        #chartOptions h2
+        {
+            display:inline-block;
+            font-size:23px;
+            margin: 0px;
+        }
+        
+        #chartOptions label
+        {
+            font-size:18px;
+            margin-left:75px;
+            cursor: pointer;
+        }
+        
+        #chartOptions input
+        {
+            cursor: pointer;
+        }
+
+         #chartOptions #firstLabelOptions
+        {
+            margin-left:25px;
+        }
+        
+        #chartNote
+        {
+            position: absolute;
+            bottom: 75px;
+            left:280px;
+            color:rgba(0,0,0,.6);
+        }
+        #scenario1Label
+        {
+            color:rgba(51,102,204,1);
+            position: absolute;
+            bottom:0px;
+            right:25px;
+            display: none;
+        }
+        #scenario2Label
+        {
+            color:rgba(220,57,18,1);
+            position: absolute;
+            bottom:0px;
+            right:25px;
+            display:none;
+        }
+
+        #principal,#addition,#principal2,#addition2
+        {
+            width:225px;
+        }
+
+        #scenario1Plug
+        {
+            color:rgba(51,102,204,1);
+            display:none;
+        }
+
+        #scenario2Plug
+        {
+            color:rgba(220,57,18,1);
+            display:none;
+        }
+        
+        #mainContent2
+        {
+            display:none;
+        }
